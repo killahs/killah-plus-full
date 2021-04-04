@@ -37,6 +37,18 @@ public class WeChatPayController {
     }
 
     /**
+     * 微信H5付款
+     * @param payOrderDTO
+     * @param request
+     * @return
+     */
+    @PostMapping("/h5")
+    public ResultVO wechatPayByH5(@RequestBody PayOrderDTO payOrderDTO, HttpServletRequest request) {
+        payOrderDTO.setClientIp(IPUtil.getIpAddr(request));
+        return transactionService.submitOrderWechatH5(payOrderDTO);
+    }
+
+    /**
      * 微信支付回调
      * @param request
      * @return
@@ -48,4 +60,45 @@ public class WeChatPayController {
         return transactionService.wechatPayNotify(params);
     }
 
+    /**
+     * 微信退款
+     * @param payOrderDTO
+     * @return
+     */
+    @RequestMapping("/refund")
+    public ResultVO wechatRefund(@RequestBody PayOrderDTO payOrderDTO) {
+        return transactionService.wechatRefund(payOrderDTO);
+    }
+
+    /**
+     * 微信退款回调
+     * @param request
+     * @return
+     */
+    @RequestMapping("/refundNotify")
+    public String wechatRefundNotify(HttpServletRequest request) {
+        String xmlMsg = WeChatUtil.readData(request);
+        Map<String, String> params = WeChatUtil.xmlToMap(xmlMsg);
+        return transactionService.wechatRefundNotify(params);
+    }
+
+    /**
+     * payOrderDTO
+     * @param payOrderDTO
+     * @return
+     */
+    @GetMapping("/payQuery")
+    public ResultVO payQuery(@RequestBody PayOrderDTO payOrderDTO) {
+        return transactionService.wechatPayQuery(payOrderDTO);
+    }
+
+    /**
+     * 查看订单退款状态
+     * @param payOrderDTO
+     * @return
+     */
+    @GetMapping("/refundQuery")
+    public ResultVO refundQuery(@RequestBody PayOrderDTO payOrderDTO) {
+        return transactionService.wechatRefundQuery(payOrderDTO);
+    }
 }

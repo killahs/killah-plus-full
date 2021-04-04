@@ -49,6 +49,15 @@ public class WeChatUtil {
     }
 
     /**
+     * 判断是否请求成功
+     * @param codeValue
+     * @return
+     */
+    public static boolean codeIsOk(String codeValue) {
+        return StrUtil.isNotEmpty(codeValue) && "SUCCESS".equals(codeValue);
+    }
+
+    /**
      * XML字符串转换为MAP格式
      *
      * @param xmlStr
