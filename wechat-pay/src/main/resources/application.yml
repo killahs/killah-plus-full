@@ -1,0 +1,8 @@
+wechat:
+  appId: wxbxxxxxxx
+  appSecret: xxxxxxxxxx
+  mchId: 160xxxxxxx
+  key:  xxxxxxx
+  certPath: xxxxxxx
+  payNotifyUrl: http://xxxxxxx
+  refundNotifyUrl: http://xxxxxxx
