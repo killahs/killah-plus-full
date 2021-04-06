@@ -83,7 +83,7 @@ public class WeChatPayController {
     }
 
     /**
-     * payOrderDTO
+     * 查看订单支付状态
      * @param payOrderDTO
      * @return
      */
