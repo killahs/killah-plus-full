@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>wechat-pay</module>
+        <module>sharding-sphere</module>
     </modules>
 
     <parent>
