@@ -10,6 +10,8 @@
     <modules>
         <module>wechat-pay</module>
         <module>sharding-sphere</module>
+        <module>sharding-sphere/sub-table</module>
+        <module>sharding-sphere/db-read-write</module>
     </modules>
 
     <parent>

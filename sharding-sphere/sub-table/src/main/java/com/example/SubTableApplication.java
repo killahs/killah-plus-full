@@ -9,10 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Version: 1.0
  */
 @SpringBootApplication
-public class WeChatApplication {
+public class SubTableApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(WeChatApplication.class, args);
+        SpringApplication.run(SubTableApplication.class, args);
     }
 
 }
