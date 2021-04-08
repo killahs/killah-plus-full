@@ -7,7 +7,7 @@
 ## 一、Sharding Sphere实现分库
 有关分库分表、Sharding Sphere 的理论以及知识点分以下7篇Bold做详细说明：
 - [1. 分库分表理论](https://github.com/killahs/killah-plus-full/blob/main/sharding-sphere/blog/README-01.md)
-- [2. Sharding Sphere](https://github.com/killahs/killah-plus-full/blob/main/sharding-sphere/README-02.md)
+- [2. Sharding Sphere](https://github.com/killahs/killah-plus-full/blob/main/sharding-sphere/blog/README-02.md)
 - [3. SpringBoot + Sharding Sphere 实现读写分离](https://github.com/killahs/killah-plus-full/blob/main/sharding-sphere/blog/README-03.md)
 - [4. SpringBoot + Sharding Sphere 实现分表](https://github.com/killahs/killah-plus-full/blob/main/sharding-sphere/blog/README-04.md)
 - [5. SpringBoot + Sharding Sphere 实现分库分表](https://github.com/killahs/killah-plus-full/blob/main/sharding-sphere/blog/README-05.md)
