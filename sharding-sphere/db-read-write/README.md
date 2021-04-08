@@ -1,7 +1,7 @@
 # SpringBoot + Sharding Sphere 实现读写分离
 ## 一、项目概述
 ### 1.1. 项目说明
-**场景：** 如果实际项目中Mysql是 Master-Slave (主从)部署的，那么数据保存到Master库，Master库数据同步数据到Slave库，数据读取到Slave库，这样可以减缓数据库的压力。
+**场景：** 如果实际项目中Mysql是 Master-Slave (主从)部署的，那么数据保存到 Master 库，Master 库数据同步数据到Slave库，数据读取到Slave库，这样可以减缓数据库的压力。
 
 ### 1.2. 数据库设计
 我们这个项目中Mysql服务器并没有实现主从部署,而是同一个服务器建立两个库，一个做 Master 库，一个做 Slave 库。
@@ -129,7 +129,7 @@ public class UserController {
 
 ## 3.2. 写数据
 **请求：** 
-`localhost:8080/user/save?name=小小&sex=女&age=3`
+`localhost:8088/user/save?name=小小&sex=女&age=3`
 
 查看 Mater 数据库
 
