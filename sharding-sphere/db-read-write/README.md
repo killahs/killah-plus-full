@@ -128,7 +128,7 @@ public class UserController {
 ![img.png](../blog/image/img17.png)
 
 ## 3.2. 写数据
-**请求：** 
+**请求接口：** 
 `localhost:8088/user/save?name=小小&sex=女&age=3`
 
 查看 Mater 数据库
