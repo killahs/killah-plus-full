@@ -7,5 +7,6 @@
 该工程主要是一些常用技术的项目集，提供学习参考。
 
 ### 文件项目说明
-- **wechat-pay**：微信支付相关参考
-- **sharding-sphere**：分库分表相关参考
+- [**wechat-pay**：微信支付相关参考](https://github.com/killahs/killah-plus-full/tree/main/wechat-pay)
+- [**sharding-sphere**：分库分表相关参考](https://github.com/killahs/killah-plus-full/tree/main/sharding-sphere)
+  
