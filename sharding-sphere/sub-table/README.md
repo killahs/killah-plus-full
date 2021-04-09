@@ -3,7 +3,7 @@
 ### 1.1. 项目说明
 **场景：** 在实际开发中，如果表的数据过大，我们可能需要把一张表拆分成多张表，这里就是通过 Sharding Sphere 实现分表功能，但不分库。
 
-### 1.1. 数据库设计
+### 1.2. 数据库设计
 这里有个 member 库，里面的 tab_user 表由一张拆分成3张，分别是 tab_user0、tab_user1、tab_user2。
 
 ![img.png](../blog/image/img20.png)
