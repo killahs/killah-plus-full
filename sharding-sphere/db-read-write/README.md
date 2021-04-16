@@ -19,50 +19,7 @@
 ## 二、核心代码
 **说明：** 这里只贴出与技术相关的代码，完整代码请参考项目。
 
-### 2.1. pom.xml
-```xml
-<properties>
-    <java.version>1.8</java.version>
-    <mybatis-spring-boot>2.0.1</mybatis-spring-boot>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-</properties>
-
-<dependencies>
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-web</artifactId>
-    </dependency>
-    <dependency>
-        <groupId>org.mybatis.spring.boot</groupId>
-        <artifactId>mybatis-spring-boot-starter</artifactId>
-        <version>${mybatis-spring-boot}</version>
-    </dependency>
-    <!--mybatis驱动-->
-    <dependency>
-        <groupId>mysql</groupId>
-        <artifactId>mysql-connector-java</artifactId>
-    </dependency>
-    <!--druid数据源-->
-    <dependency>
-        <groupId>com.alibaba</groupId>
-        <artifactId>druid-spring-boot-starter</artifactId>
-        <version>1.1.16</version>
-    </dependency>
-    <!--shardingsphere最新版本-->
-    <dependency>
-        <groupId>org.apache.shardingsphere</groupId>
-        <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
-        <version>4.0.0-RC1</version>
-    </dependency>
-    <!--lombok实体工具-->
-    <dependency>
-        <groupId>org.projectlombok</groupId>
-        <artifactId>lombok</artifactId>
-    </dependency>
-</dependencies>
-```
-
-### 2.2. application.properties
+### 2.1. application.properties
 ```properties
 #指定mybatis信息
 mybatis.config-location=classpath:mybatis-config.xml
@@ -91,7 +48,7 @@ spring.shardingsphere.props.sql.show=true
 ```
 Sharding-JDBC可以通过 Java、YAML、Spring命名空间和 Spring Boot Starter四种方式配置，开发者可根据场景选择适合的配置方式，具体可以看官网。
 
-### 2.3. UserController
+### 2.2. UserController
 ```java
 @RestController
 public class UserController {

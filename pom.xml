@@ -13,6 +13,8 @@
         <module>sharding-sphere/sub-table</module>
         <module>sharding-sphere/db-read-write</module>
         <module>sharding-sphere/sub-db-table</module>
+        <module>sharding-sphere/sub-table-read-write</module>
+        <module>sharding-sphere/sub-db-table-read-write</module>
     </modules>
 
     <parent>
