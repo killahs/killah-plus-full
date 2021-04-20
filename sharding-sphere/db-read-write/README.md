@@ -59,7 +59,7 @@ public class UserController {
     /**
      * 获取用户列表
      */
-    @GetMapping("user/list")
+    @GetMapping("list-user")
     public Object userList() {
         return userService.list();
     }
@@ -67,7 +67,7 @@ public class UserController {
     /**
      * 保存用户
      */
-    @PostMapping("user/save")
+    @PostMapping("save-user")
     public Object saveUser() {
         return userService.saveOne(new User("小小", "女", 3));
     }
@@ -86,7 +86,7 @@ public class UserController {
 
 ## 3.2. 写数据
 **请求接口：** 
-`localhost:8088/user/save?name=小小&sex=女&age=3`
+`localhost:8088/save-user?name=小小&sex=女&age=3`
 
 查看 Mater 数据库
 

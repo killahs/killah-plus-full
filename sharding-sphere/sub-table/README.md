@@ -78,7 +78,7 @@ public class UserController {
 ## 三、测试验证
 ### 3.1. 批量插入数据
 **请求接口：**
-`localhost:8086/user/save`
+`localhost:8086/save-user`
 
 我们可以从商品接口代码中可以看出，它会批量插入5条数据。我们先看控制台输出SQL语句。
 

@@ -74,7 +74,7 @@ public class UserController {
     /**
      * 获取用户列表
      */
-    @GetMapping("user/list")
+    @GetMapping("list-user")
     public Object listUser() {
         return userService.list();
     }
@@ -82,7 +82,7 @@ public class UserController {
     /**
      * 批量保存用户
      */
-    @PostMapping("user/save")
+    @PostMapping("save-user")
     public Object saveUser() {
         List<User> users = Lists.newArrayList();
         users.add(new User("小小", "女", 3));
@@ -99,7 +99,7 @@ public class UserController {
 ## 三、测试验证
 ### 3.1. 批量插入数据
 **请求接口：**
-`localhost:8086/user/save`
+`localhost:8086/save-user`
 
 我们可以从商品接口代码中可以看出，它会批量插入5条数据。我们先看控制台输出SQL语句。
 

@@ -31,7 +31,7 @@
 ```
 sharding-sphere # 父工程
   | 
-  |---blog            #理论只是
+  |---blog            #理论知识
   | 
   |---db-read-write   #实现读写分离功能
   | 
