@@ -4,7 +4,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/Killahs/killah-plus-full.svg?style=social&label=Stars)](https://github.com/killahs/killah-plus-full)
 [![GitHub forks](https://img.shields.io/github/forks/Killahs/killah-plus-full.svg?style=social&label=Fork)](https://github.com/killahs/killah-plus-full)
 
-weChat-Pay，主要是通过微信SDK，不依赖太多第三方JAR，完成支付开发的一个展示。仅仅作为例子使用简单快速完成支付模块的开发，可轻松应用到任何系统里。
+WeChat-Pay，主要是通过微信SDK，不依赖太多第三方JAR，完成支付开发的一个展示。仅仅作为例子使用简单快速完成支付模块的开发，可轻松应用到任何系统里。
 微信支付支持多商户多应用，普通商户模式与服务商商模式当然也支持境外商户、同时支持Api-v2 版本的接口。
 
 ## 微信JSAPI支付方式
